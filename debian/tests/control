@@ -1,0 +1,2 @@
+Tests: python3-pep8-naming
+Depends: python3-all, python3-flake8-polyfill

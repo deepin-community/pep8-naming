@@ -1,0 +1,5 @@
+#!/bin/sh
+PYTHONPATH=$PYTHONPATH:src/
+export PYTHONPATH
+set -e
+for py in $(py3versions -s); do echo "[*] testing $py:"; $py -Wd run_tests.py; done
